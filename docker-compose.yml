@@ -9,7 +9,7 @@ services:
       - POSTGRES_PASSWORD=pg
   web:
     build: .
-    command: bash -c "sleep 20 && python manage.py makemigrations && python manage.py migrate && python fire.py"
+    command: bash -c "sleep 10 && python manage.py makemigrations && python manage.py migrate && python fire.py"
     volumes:
       - .:/code
     ports:
