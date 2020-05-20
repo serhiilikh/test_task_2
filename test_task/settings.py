@@ -126,6 +126,3 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 
-CELERY_BROKER_URL = "redis://app_redis:6379"
-CELERY_ACCEPT_CONTENT = ["json"]
-CELERY_TASK_SERIALIZER = "json"
